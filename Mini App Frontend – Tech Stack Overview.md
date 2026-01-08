@@ -48,12 +48,18 @@ This mini web app is designed to run **inside the Super App as WebView** and fol
 
 ### 🧼 Code Quality & Governance
 
-- ESLint (strict rules)
-- Prettier (consistent formatting)
-- Husky + lint-staged (pre-commit checks)
-- Conventional Commits
+- **TypeScript (strict)** – Compile-time type checking via `tsc --noEmit`
+- **ESLint** – Code quality enforcement (strict rules)
+- **Prettier** – Consistent code formatting
+- **Husky** – Git hooks for pre-commit checks
+- **Conventional Commits** – Standardized commit message format
 
-> Linting, formatting, and tests must pass before code can be committed.
+> All pre-commit checks must pass before code can be committed:
+>
+> 1. TypeScript type checking
+> 2. ESLint validation
+> 3. Prettier format verification
+> 4. Vitest test execution
 
 ---
 
